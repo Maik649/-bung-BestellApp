@@ -1,0 +1,10 @@
+:root {
+    --header-backround-color: rgb(226, 124, 55);
+    --primery-backround-color: rgb(5, 23, 30);
+    --card-beckround: rgb(13, 50, 64);
+    --card-backround-hover: rgb(16, 62, 78);
+    --card-healing: rgb(18, 71, 88);
+    --healing-color: rgb(254, 91, 78);
+    --content-limitation: 1440px;
+    --content-limitation: 85%;
+}

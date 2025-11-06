@@ -1,0 +1,57 @@
+@import url("./css/varieablen.css");
+@import url("./css/base.css");
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var();
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-backround-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: start;
+}
+
+header .logo img {
+  height: 80px;
+}
+
+.content-wrepper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.content {
+  flex: 3;
+}
+
+.content-header-text {
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  background-color: beige;
+  margin-bottom: 20px;
+}
+.basket-wrepper {
+  flex: 2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: calc(100vh - 125px);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
