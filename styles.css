@@ -32,13 +32,13 @@ header .logo img {
 
 .content-header-text {
   display: flex;
-  /* position: absolute; */
   width: 100%;
   background-color: beige;
   margin-bottom: 20px;
 }
+
 .basket-wrepper {
-  flex: 2;
+  flex: 1;
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #f9f9f9;

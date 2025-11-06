@@ -5,6 +5,7 @@ let deshes = [
     price: 12.99,
     description: "Classic Italian pasta with meat sauce",
     category: "Pasta",
+    img: "./assets/img/spaghetti-bolognese.jpg",
   },
   {
     id: 2,
