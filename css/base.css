@@ -22,12 +22,16 @@ nav {
 
 .content-header {
   width: 100%;
-  background-image: url("../assets/img/food-1351290_1280.jpg");
   height: 50%;
   object-fit: cover;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+}
+.nav-section img {
+  width: 150px;
+  height: 104px;
+  border-radius: 16px;
 }
 
 .content-header-menu {
@@ -44,6 +48,7 @@ nav {
   align-items: center;
   background-color: rgb(247, 246, 241);
   gap: 20px;
+  margin-bottom: 16px;
 }
 
 .nav-section #nav-img {
@@ -67,7 +72,4 @@ nav {
   margin-right: 10px;
 }
 
-.content-header img {
-  width: 100%;
-  height: auto;
-}
+
