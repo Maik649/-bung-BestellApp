@@ -50,7 +50,12 @@ nav {
   gap: 20px;
   margin-bottom: 16px;
 }
-
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 .nav-section #nav-img {
   width: 40px;
   height: 40px;
