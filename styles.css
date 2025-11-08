@@ -46,6 +46,11 @@ header .logo img {
   height: calc(100vh - 125px);
 }
 
+.basket-content {
+  position: sticky;
+  top: 0;
+}
+
 footer {
   background-color: #333;
   color: #fff;

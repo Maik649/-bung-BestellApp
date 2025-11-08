@@ -28,11 +28,6 @@ nav {
   background-position: center;
   margin-bottom: 20px;
 }
-.nav-section img {
-  width: 150px;
-  height: 104px;
-  border-radius: 16px;
-}
 
 .content-header-menu {
   width: 74%;
@@ -44,18 +39,12 @@ nav {
 
 .nav-section {
   display: flex;
-  justify-content: stretch;
+  flex-direction: column;
   align-items: center;
-  background-color: rgb(247, 246, 241);
   gap: 20px;
   margin-bottom: 16px;
 }
-.nav-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .nav-section #nav-img {
   width: 40px;
   height: 40px;
@@ -63,9 +52,44 @@ nav {
   cursor: pointer;
 }
 
+.nav-section h3 {
+  width: calc(100% - 60px);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.figger-haeder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 50px;
+}
+
+.figger-haeder img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 90px;
+  background-color: rgb(247, 246, 241);
+}
+
 .bewertungen {
   display: flex;
-  width: 100%;
+  width: calc(100% - 60px);
+  margin-left: 20px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -77,4 +101,23 @@ nav {
   margin-right: 10px;
 }
 
+.is-close{
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+h3{
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
