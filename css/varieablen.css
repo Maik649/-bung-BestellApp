@@ -6,6 +6,6 @@
     --card-healing: rgb(18, 71, 88);
     --healing-color: rgb(254, 91, 78);
     --content-limitation: 1440px;
-    --content-limitation: 85%;
-    --text-color: white;
+    --content-limitation: 1440px;
+    --text-color: rgb(63, 62, 62);
 }

@@ -1,0 +1,41 @@
+.desh-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--header-backround-color);
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+.deshes-img-content{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 16px;
+    border-radius: 16px;
+   
+}
+
+.deshes-img-content img{
+    width: 100%;
+    border-radius: 16px;
+     object-fit: cover;
+}
+
+.button-content{
+    display: flex;
+    height: 180px;
+    width: 80px;
+}
+
+.add-button{
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+     height: 180px;
+    width: 80px;
+}   

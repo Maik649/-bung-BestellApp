@@ -1,6 +1,12 @@
-function onToggle() {
-  let h3 = document.getElementById("deshes");
-  let element = document.getElementById("deshesH3");
-  element.classList.toggle("is-open");
-   h3.classList.toggle("is-open");
+function renderDishesNavi(array) {
+  const dishesFrame = document.getElementById("deshContent");
+  dishesFrame.innerHTML = "";
+  if (category) {
+    for (let index = 0; index < array.length; index++) {
+      const element = array[index];
+      dishesFrame.innerHTML += getDeshesTemplade(element);
+    }
+ 
+  }
 }
+
