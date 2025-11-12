@@ -33,7 +33,7 @@ function renderBasket() {
   `;}
 }
 
-function addDeshesToBasket(index) {
+function addDeshesToBasket(id, index) {
   if (dishes.length > 0) {
     let newDishes = dishes[index];
     baskets.push(newDishes);

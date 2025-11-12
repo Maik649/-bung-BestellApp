@@ -25,6 +25,9 @@
     padding: 8px;
     object-fit: cover;
 }
+.dishes-img{
+    height: 35px;
+}
 
 .add-to-basket-button{
     padding: 8px 16px;
