@@ -28,12 +28,12 @@ function renderBasket() {
     basketContent.innerHTML += `
        <button>+</button>
         <span>${basket.id}</span>
-        <img src="${basket.img}" alt=""${basket.name}>
+        <img class="dishes-img" src="${basket.img}" alt=""${basket.name}>
         <button>-</button>
   `;}
 }
 
-function addDeshesToBasket(id, index) {
+function addDeshesToBasket(index) {
   if (dishes.length > 0) {
     let newDishes = dishes[index];
     baskets.push(newDishes);
