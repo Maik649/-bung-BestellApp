@@ -48,8 +48,31 @@ header .logo img {
   flex-grow: 1;
 }
 
-.content {
+.deshes-content {
   flex: 3;
+  /* overflow-y: scroll; */
+  /* height: calc(100vh - 125px); */
+}
+/* width */
+.deshes-content::-webkit-scrollbar{
+  width: 10px;
+  
+}
+
+/* Track */
+.deshes-content::-webkit-scrollbar-track {
+  background: #bdbdbd; 
+}
+ 
+/* Handle */
+.deshes-content::-webkit-scrollbar-thumb {
+  background: #777575; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.deshes-content::-webkit-scrollbar-thumb:hover {
+  background: #8b8b8b; 
 }
 
 .basket-wrepper {
@@ -58,7 +81,7 @@ header .logo img {
   padding: 10px;
   background-color: #f9f9f9;
   width: 100%;
-  height: calc(100vh - 125px);
+
 }
 
 .basket-content {

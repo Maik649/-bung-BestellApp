@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assets/Favicon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
-        <script src="./scripts/category-db.js" defer></script>
-        <script src="./scripts/bürger.js" defer></script>
-        <script src="./scripts/pizza.js" defer></script>
+        <script src="./scripts/category-db.js"></script>
+        <script src="./scripts/bürger.js"></script>
+        <script src="./scripts/pizza.js"></script>
         <script src="./scripts/templade/tamplade.js" defer></script>
         <script src="script.js" defer></script>
         <script src="./scripts/toggle.js" defer></script>
+        <script src="./scripts/db.js"></script>
         <title>BestellApp</title>
     </head>
 
@@ -37,28 +38,31 @@
                 <p>Bewertungen: (4,2 von 5 sternen)</p>
                 <img id="star-img" src="../assets/img/icons/stern.png" alt="star-Icon">
             </div>
-            <div id="menu-header" class="menu-header">
 
-            </div>
+            <div id="menu-header" class="menu-header"></div>
+
             <div class="content-wrepper">
-
-                <section id="deshContent" class="content">
+                <section id="deshes-content" class="deshes-content">
 
                 </section>
-                <section class="basket-wrepper">
-                    <div class="basket-content">
-                        <div class="basket-header">
-                            <h2>Warenkorb</h2>
-                        </div>
-                        <div class="basket-content">
-                            <p>Ihr Warenkorb ist leer.</p>
-                        </div>
-                        <div class="basket-footer">
-                            <button id="order-button">Bestellen</button>
-                        </div>
+                <section id="basket-wrepper" class="basket-wrepper">
+                    <div class="basket-header">
+                        <h2>Warenkorb</h2>
+                        <img id="basket-icon" src="" alt="basket-Icon">
                     </div>
+                    <div id="basket-content" class="basket-content">
 
+                    </div>
+                    <div class="basket-footer">
+                        <div class="total-price">
+                            <span>Lieferkosten: 3,50€</span>
+                            <span>Gesamt:</span>
+                            <span id="total-price-value">0 €</span>
+                        </div>
+                        <button id="order-button" class="order-button">Bestellen</button>
+                    </div>
                 </section>
+
 
             </div>
         </main>
@@ -67,4 +71,3 @@
     </body>
 
 </html>
-
