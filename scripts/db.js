@@ -1,6 +1,6 @@
 let dishes =[
     {
-        "id": 1,
+        "id": 0,
         "name": "Pizza Margherita", 
         "price": 15.00,
         "description": "mit Tomaten, Mozzarella, Basilikum",
@@ -8,7 +8,7 @@ let dishes =[
         "img": "./assets/img/pizza_margherita.jpg",
     },
     {
-        "id": 2,
+        "id": 1,
         "name": "Pizza Salami", 
         "price": 16.00,
         "description": "mit Tomaten, Mozzarella, Salami",
@@ -16,7 +16,7 @@ let dishes =[
         "img": "./assets/img/pizza_salami.jpg",
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Pizza Funghi", 
         "price": 16.00,
         "description": "mit Tomaten, Mozzarella, Champignons",
@@ -24,7 +24,7 @@ let dishes =[
         "img": "./assets/img/pizza_funghi.jpg",
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Pizza Prosciutto", 
         "price": 16.00,
         "description": "mit Tomaten, Mozzarella, Schinken",
@@ -32,7 +32,7 @@ let dishes =[
         "img": "./assets/img/pizza_prosciutto.jpg",
     },
     {
-        "id": 5,
+        "id": 4,
         "name": "Pizza Stagioni", 
         "price": 17.00,
         "description": "mit Tomaten, Mozzarella, Schinken, Champignons, Oliven",
@@ -40,7 +40,7 @@ let dishes =[
         "img": "./assets/img/pizza_quattro_stagioni.jpg",
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Burger Cheese",
         "price": 12.00,
         "description": "mit Rindfleisch, Käse, Tomaten, Gurken, Salat",
@@ -48,7 +48,7 @@ let dishes =[
         "img": "./assets/img/burger_cheese.jpg",
     },
     {   
-        "id": 7,
+        "id": 6,
         "name": "Burger Bacon",
         "price": 13.00,
         "description": "mit Rindfleisch, Käse, Tomaten, Gurken, Salat, Bacon",
@@ -56,7 +56,7 @@ let dishes =[
         "img": "./assets/img/burger_bacon.jpg",
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "Burger Veggie",
         "price": 11.00,
         "description": "mit Gemüse, Käse, Tomaten, Gurken, Salat",
@@ -64,7 +64,7 @@ let dishes =[
         "img": "./assets/img/burger_veggie.jpg",
     },
     {
-        "id": 9,
+        "id": 8,
         "name": "Burger Chicken",
         "price": 12.00,
         "description": "mit Hähnchen, Käse, Tomaten, Gurken, Salat",
@@ -72,7 +72,7 @@ let dishes =[
         "img": "./assets/img/burger_chicken.jpg",
     },
     {
-        "id": 10,
+        "id": 9,
         "name": "Burger Fish",
         "price": 13.00,
         "description": "mit Fisch, Käse, Tomaten, Gurken, Salat",
@@ -80,7 +80,7 @@ let dishes =[
         "img": "./assets/img/burger_fish.jpg",
     },
     {
-        "id": 11,
+        "id": 10,
         "name": "Pasta Carbonara",
         "price": 12.00,
         "description": "mit Speck, Ei, Sahnesauce",
@@ -88,7 +88,7 @@ let dishes =[
         "img": "./assets/img/pasta_carbonara.jpg",
     },
     {
-        "id": 12,
+        "id": 11,
         "name": "Pasta Bolognese",
         "price": 12.00,
         "description": "mit Hackfleischsauce",
@@ -96,7 +96,7 @@ let dishes =[
         "img": "./assets/img/pasta_bolognese.jpg",
     },
     {
-        "id": 13,
+        "id": 12,
         "name": "Pasta Aglio e Olio",
         "price": 11.00,
         "description": "mit Knoblauch, Olivenöl, Peperoni",
@@ -104,7 +104,7 @@ let dishes =[
         "img": "./assets/img/pasta_aglio_e_olio.jpg",
     },
     {
-        "id": 14,
+        "id": 13,
         "name": "Pasta Arrabiata",
         "price": 11.00,
         "description": "mit Tomatensauce, Peperoni",
@@ -112,7 +112,7 @@ let dishes =[
         "img": "./assets/img/pasta_arrabiata.jpg",
     },
     {
-        "id": 15,
+        "id": 14,
         "name": "Pasta Pesto",
         "price": 11.00,
         "description": "mit Basilikum, Pinienkernen, Parmesan",
@@ -120,7 +120,7 @@ let dishes =[
         "img": "./assets/img/pasta_pesto.jpg",
     },
     {
-        "id": 16,
+        "id": 15,
         "name": "Salat Caprese",
         "price": 9.00,
         "description": "mit Tomaten, Mozzarella, Basilikum",
@@ -128,7 +128,7 @@ let dishes =[
         "img": "./assets/img/salat_caprese.jpg",
     },
     {
-        "id": 17,
+        "id": 16,
         "name": "Salat Caesar",
         "price": 10.00,
         "description": "mit Hähnchen, Parmesan, Croutons",
@@ -136,7 +136,7 @@ let dishes =[
         "img": "./assets/img/salat_caesar.jpg",
     },
     {
-        "id": 18,
+        "id": 17,
         "name": "Salat Nicoise",
         "price": 10.00,
         "description": "mit Thunfisch, Oliven, Ei, Bohnen",
@@ -144,7 +144,7 @@ let dishes =[
         "img": "./assets/img/salat_nicoise.jpg",
     },
     {
-        "id": 19,
+        "id": 18,
         "name": "Salat Waldorf",
         "price": 9.00,
         "description": "mit Äpfeln, Walnüssen, Sellerie",
@@ -152,7 +152,7 @@ let dishes =[
         "img": "./assets/img/salat_waldorf.jpg",
     },
     {
-        "id": 20,
+        "id": 19,
         "name": "Salat Griechisch",
         "price": 9.00,
         "description": "mit Oliven, Feta, Gurken, Tomaten",
@@ -160,7 +160,7 @@ let dishes =[
         "img": "./assets/img/salat_griechisch.jpg",
     },
     {
-        "id": 21,
+        "id": 20,
         "name": "Tiramisu",
         "price": 5.00,
         "description": "mit Mascarpone, Kaffee, Löffelbiskuits",
@@ -168,7 +168,7 @@ let dishes =[
         "img": "./assets/img/tiramisu.jpg",
     },
     {
-        "id": 22,
+        "id": 21,
         "name": "Panna Cotta",
         "price": 5.00,
         "description": "mit Sahne, Vanille, Erdbeersauce",
@@ -176,7 +176,7 @@ let dishes =[
         "img": "./assets/img/panna_cotta.jpg",
     },
     {
-        "id": 23,
+        "id": 22,
         "name": "Tarte Tatin",
         "price": 5.00,
         "description": "mit Äpfeln, Blätterteig, Vanilleeis",
@@ -184,7 +184,7 @@ let dishes =[
         "img": "./assets/img/tarte_tatin.jpg",
     },
     {
-        "id": 24,
+        "id": 23,
         "name": "Crème Brûlée",
         "price": 5.00,
         "description": "mit Eigelb, Zucker, Vanille",
@@ -192,7 +192,7 @@ let dishes =[
         "img": "./assets/img/creme_brulee.jpg",
     },
     {
-        "id": 25,
+        "id": 24,
         "name": "Mousse au Chocolat",
         "price": 5.00,
         "description": "mit Schokolade, Eigelb, Sahne",
@@ -200,7 +200,7 @@ let dishes =[
         "img": "./assets/img/mousse_au_chocolat.jpg",
     },
     {
-        "id": 26,
+        "id": 25,
         "name": "Cola",
         "price": 3.00,
         "description": "mit Zucker, Koffein, Kohlensäure",
@@ -208,7 +208,7 @@ let dishes =[
         "img": "./assets/img/cola.jpg",
     },
     {
-        "id": 27,
+        "id": 26,
         "name": "Fanta",
         "price": 3.00,
         "description": "mit Zucker, Orangensaft, Kohlensäure",
@@ -216,7 +216,7 @@ let dishes =[
         "img": "./assets/img/fanta.jpg",
     },
     {
-        "id": 28,
+        "id": 27,
         "name": "Sprite",
         "price": 3.00,
         "description": "mit Zucker, Zitronensaft, Kohlensäure",
@@ -224,7 +224,7 @@ let dishes =[
         "img": "./assets/img/sprite.jpg",
     },
     {
-        "id": 29,
+        "id": 28,
         "name": "Apfelsaft",
         "price": 3.00,
         "description": "mit Zucker, Apfelsaft, Kohlensäure",
@@ -232,7 +232,7 @@ let dishes =[
         "img": "./assets/img/apfelsaft.jpg",
     },
     {
-        "id": 30,
+        "id": 29,
         "name": "Orangensaft",
         "price": 3.00,
         "description": "mit Zucker, Orangensaft, Kohlensäure",
