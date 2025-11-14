@@ -4,7 +4,7 @@ let dishes =[
         "name": "Pizza Margherita", 
         "price": 15.00,
         "description": "mit Tomaten, Mozzarella, Basilikum",
-        "amount": 0,
+        "amount": 1,
         "img": "./assets/img/pizza_margherita.jpg",
     },
     {
@@ -12,7 +12,7 @@ let dishes =[
         "name": "Pizza Salami", 
         "price": 16.00,
         "description": "mit Tomaten, Mozzarella, Salami",
-        "amount": 0,
+        "amount": 1,
         "img": "./assets/img/pizza_salami.jpg",
     },
     {
