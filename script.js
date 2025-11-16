@@ -105,9 +105,7 @@ function openDialog() {
   removeBasket();
   getsupBasketPrice();
   renderBasket();
-    setTime = setTimeout(closeDialog, 2000); 
-  
-  
+  setTime = setTimeout(closeDialog, 2000); 
 }
 
 function closeDialog() {
