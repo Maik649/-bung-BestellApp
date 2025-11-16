@@ -6,17 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assets/Favicon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
-        <script src="./scripts/db.js"></script>
-        <script src="./scripts/category-db.js"></script>
-        <script src="./scripts/getänke.js"></script>
-        <script src="./scripts/pasta.js"></script>
-        <script src="./scripts/salat.js"></script>
-        <script src="./scripts/toppings.js"></script>
-        <script src="./scripts/bürger.js"></script>
-        <script src="./scripts/pizza.js"></script>
+        <script src="./scripts/db/db.js"></script>
+        <script src="./scripts/db/category-db.js"></script>
+        <script src="./scripts/db/getänke.js"></script>
+        <script src="./scripts/db/pasta.js"></script>
+        <script src="./scripts/db/salat.js"></script>
+        <script src="./scripts/db/toppings.js"></script>
+        <script src="./scripts/db/bürger.js"></script>
+        <script src="./scripts/db/pizza.js"></script>
         <script src="./scripts/templade/tamplade.js" defer></script>
-        <script src="script.js" defer></script>
         <script src="./scripts/toggle.js" defer></script>
+        <script src="script.js" defer></script>
         <title>BestellApp</title>
     </head>
 
@@ -36,29 +36,22 @@
         <main>
             <div class="hero-section">
                 <img src="./assets/img/food-1351290_1280.jpg" alt="hero-image">
-
             </div>
             <div class="bewertungen">
                 <p>Bewertungen: (4,2 von 5 sternen)</p>
                 <img id="star-img" src="../assets/img/icons/stern.png" alt="star-Icon">
             </div>
 
-            <div id="menu-header" class="menu-header">
-                
-            </div>
+            <div id="menu-header" class="menu-header"></div>
 
             <div class="content-wrepper">
-                <section id="deshes-content" class="deshes-content">
-
-                </section>
+                <section id="deshes-content" class="deshes-content"></section>
                 <section id="basket-wrepper" class="basket-wrepper">
                     <div class="basket-container">
                     <div class="basket-header">
                         <h2>Warenkorb</h2>
-                        
                     </div>
                     <div id="basket-content" class="basket-content">
-
                     </div>
                     <div class="basket-footer">
                         <div class="total-price">
@@ -70,16 +63,12 @@
                     </div>
                     </div>
                 </section>
-
-
             </div>
         </main>
-
         <footer>
             <div class="logo">
                 <img src="./assets/Favicon/android-chrome-512x512.png" alt="BestellApp Logo">
             </div>
         </footer>
     </body>
-
 </html>
