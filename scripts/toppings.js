@@ -1,0 +1,42 @@
+let Toppigs = [
+  {
+    id: 20,
+    name: "Tiramisu",
+    price: 5.0,
+    description: "mit Mascarpone, Kaffee, Löffelbiskuits",
+    amount: 1,
+    img: "./assets/img/tiramisu.jpg",
+  },
+  {
+    id: 21,
+    name: "Panna Cotta",
+    price: 5.0,
+    description: "mit Sahne, Vanille, Erdbeersauce",
+    amount: 1,
+    img: "./assets/img/panna_cotta.jpg",
+  },
+  {
+    id: 22,
+    name: "Tarte Tatin",
+    price: 5.0,
+    description: "mit Äpfeln, Blätterteig, Vanilleeis",
+    amount: 1,
+    img: "./assets/img/tarte_tatin.jpg",
+  },
+  {
+    id: 23,
+    name: "Crème Brûlée",
+    price: 5.0,
+    description: "mit Eigelb, Zucker, Vanille",
+    amount: 1,
+    img: "./assets/img/creme_brulee.jpg",
+  },
+  {
+    id: 24,
+    name: "Mousse au Chocolat",
+    price: 5.0,
+    description: "mit Schokolade, Eigelb, Sahne",
+    amount: 1,
+    img: "./assets/img/mousse_au_chocolat.jpg",
+  },
+];

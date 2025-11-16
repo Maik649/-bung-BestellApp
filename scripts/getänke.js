@@ -1,0 +1,42 @@
+let Getänke = [
+  {
+    id: 25,
+    name: "Cola",
+    price: 3.0,
+    description: "mit Zucker, Koffein, Kohlensäure",
+    amount: 1,
+    img: "./assets/img/cola.jpg",
+  },
+  {
+    id: 26,
+    name: "Fanta",
+    price: 3.0,
+    description: "mit Zucker, Orangensaft, Kohlensäure",
+    amount: 1,
+    img: "./assets/img/fanta.jpg",
+  },
+  {
+    id: 27,
+    name: "Sprite",
+    price: 3.0,
+    description: "mit Zucker, Zitronensaft, Kohlensäure",
+    amount: 1,
+    img: "./assets/img/sprite.jpg",
+  },
+  {
+    id: 28,
+    name: "Apfelsaft",
+    price: 3.0,
+    description: "mit Zucker, Apfelsaft, Kohlensäure",
+    amount: 1,
+    img: "./assets/img/apfelsaft.jpg",
+  },
+  {
+    id: 29,
+    name: "Orangensaft",
+    price: 3.0,
+    description: "mit Zucker, Orangensaft, Kohlensäure",
+    amount: 1,
+    img: "./assets/img/orangensaft.jpg",
+  },
+];

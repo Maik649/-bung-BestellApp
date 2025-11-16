@@ -1,10 +1,10 @@
 function renderDishesNavi(array) {
-  const dishesFrame = document.getElementById("deshContent");
+  const dishesFrame = document.getElementById("deshes-content");
   dishesFrame.innerHTML = "";
   if (category) {
     for (let index = 0; index < array.length; index++) {
-      const element = array[index];
-      dishesFrame.innerHTML += getDeshesTemplade(element);
+      const deshes = array[index];
+      dishesFrame.innerHTML += getDefaultDeshes(deshes);
     }
  
   }
