@@ -6,7 +6,7 @@ let dishes = [
     name: "Pizza Margherita",
     price: 15.0,
     description: "mit Tomaten, Mozzarella, Basilikum",
-    amount: 1,
+    amount: 0,
     img: "./assets/img/pizza_margherita.jpg",
     totalsPric: "",
   },
@@ -16,7 +16,7 @@ let dishes = [
     name: "Pizza Salami",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Salami",
-    amount: 1,
+    amount: 0,
     img: "./assets/img/pizza_salami.jpg",
   },
   {
@@ -25,7 +25,7 @@ let dishes = [
     name: "Pizza Funghi",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Champignons",
-    amount: 1,
+    amount: 0,
     img: "./assets/img/pizza_funghi.jpg",
   },
   {
@@ -34,7 +34,7 @@ let dishes = [
     name: "Pizza Prosciutto",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Schinken",
-    amount: 1,
+    amount: 0,
     img: "./assets/img/pizza_prosciutto.jpg",
   },
   {
@@ -43,7 +43,7 @@ let dishes = [
     name: "Pizza Stagioni",
     price: 17.0,
     description: "mit Tomaten, Mozzarella, Schinken, Champignons, Oliven",
-    amount: 1,
+    amount: 0,
     img: "./assets/img/pizza_quattro_stagioni.jpg",
   },
   {
