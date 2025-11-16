@@ -100,7 +100,9 @@ Footer .logo img {
 }
 
 .my-dialog{
-  display: flex;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
   justify-content: center;
   align-items: center;
   border: none;
@@ -112,6 +114,12 @@ Footer .logo img {
   text-align: center;
   font-size: 1.2rem;
   box-shadow: 0 4px 8px rgba(116, 116, 116, 0.637);
+}
+
+.my-dialog.isOpen{
+  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 768px) {

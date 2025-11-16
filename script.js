@@ -97,9 +97,21 @@ function removeBasket() {
 }
 
 let myDialog = document.getElementById("myModal"); 
+
 function openDialog() {
+ let openDialogs = document.querySelector("#myModal");
+     openDialogs.classList.toggle("isOpen");
   myDialog.showModal();
   removeBasket();
   getsupBasketPrice();
   renderBasket();
+    setTime = setTimeout(closeDialog, 2000); 
+  
+  
+}
+
+function closeDialog() {
+  let openDialogs = document.querySelector("#myModal");
+  openDialogs.classList.remove("isOpen");
+  myDialog.close();
 }
