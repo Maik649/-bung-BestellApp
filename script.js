@@ -44,7 +44,6 @@ function addDeshesToBasket(id) {
   renderBasket();
 }
 
-
 function moreDeshes(index) {
   const bask = baskets[index];
   if(!bask)return;
@@ -52,8 +51,6 @@ function moreDeshes(index) {
    getsupBasketPrice();
    renderBasket();
 }
-
-// Todo Berechnung nicht ins minus gehen lassen wenn unter 0 removen
 
 function fewerDeshes(index) {
   const bask = baskets[index];
@@ -79,7 +76,6 @@ function getsupBasketPrice() {
      gesamt.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";
    }
   }
-
 
 function toogleMenu() {
   let menuToggle = document.querySelectorAll("#header-content");
