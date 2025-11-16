@@ -22,7 +22,7 @@
   transition: 0.4s;
 }
 
-nav {
+.nav {
   display: none;
   list-style-type: none;
   margin: 0;

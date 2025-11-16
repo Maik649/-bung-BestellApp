@@ -42,6 +42,10 @@ header .logo img {
   height: 80px;
 }
 
+.nav {
+  display: none;
+}
+
 .content-wrepper {
   display: flex;
   flex-grow: 1;
@@ -72,6 +76,10 @@ header .logo img {
   align-items: center;
   justify-content: space-between;
 }
+.showlink {
+  opacity: 0;
+  visibility: hidden;
+}
 
 .total-price {
   font-size: 1rem;
@@ -91,27 +99,45 @@ Footer .logo img {
   height: 80px;
 }
 
+.my-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  height: 150px;
+  width: 300px;
+  color: goldenrod;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(116, 116, 116, 0.637);
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   header .logo img {
     height: 60px;
-}
+  }
 
-.hero-section img {
+  .hero-section img {
     height: 300px;
     object-fit: cover;
-}
-
-.mobil-menu-icon {
+  }
+.nav{
+       display: flex;
+    }
+  .mobil-menu-icon {
     display: block;
     cursor: pointer;
     width: 40px;
     height: 40px;
-}
+  }
 
   .hero-section {
     width: 100%;
@@ -128,10 +154,46 @@ Footer .logo img {
   .basket-wrepper {
     position: absolute;
     padding: 0;
+    width: 100%;
+    
   }
-.basket-header{
-  padding: 0;
-}
+
+  .basket-container {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: ease-in-out 0.6s;
+    height: calc(100% - 20px);
+  }
+
+  .basket-container.isOpen {
+    flex-direction: column;
+    position: sticky;
+    height:100%;
+    background-color: #fff;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+  }
+
+  .showlink {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    color: #fcfcfccc;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  
+
+  .basket-header {
+    padding: 0;
+  }
+
   .deshes-content {
     flex: 3;
     width: 100%;
@@ -141,4 +203,34 @@ Footer .logo img {
     flex-direction: column;
     height: 100%;
   }
+}
+
+@media (max-width: 425px) {
+  .hero-section {
+    height: 200px;
+  }
+
+  .hero-section img {
+    height: 200px;
+    object-fit: cover;
+  }
+     header .logo img {
+        height: 40px;
+    }
+
+    .nav{
+        width: 35px;
+        height: 35px;
+    }
+
+    .mobil-menu-icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    .mobil-menu-icon span{
+        width: 35px;
+        height: 6px;
+        margin: 6px 0;
+    }
 }

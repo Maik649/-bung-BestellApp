@@ -1,10 +1,10 @@
 :root {
-    --header-backround-color: rgb(226, 124, 55);
+    --header-backround-color: rgb(255, 128, 0);
     --primery-backround-color: rgb(5, 23, 30);
     --card-background-color: rgba(183, 185, 185, 0.829);
     --card-backround-hover: rgb(16, 62, 78);
     --card-healing: rgb(18, 71, 88);
     --healing-color: rgb(254, 91, 78);
     --content-limitation: 1440px;
-    --text-color: rgb(90, 89, 89);
+    --text-color: rgb(253, 252, 252);
 }
