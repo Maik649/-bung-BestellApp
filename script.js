@@ -86,3 +86,20 @@ function toogleMenu() {
   }
   menuContent.classList.toggle("isContentOpen");
 }
+
+function openWarenkorb(){
+   let openWarenkorp = document.querySelector(".basket-container");
+   openWarenkorp.classList.toggle("isOpen");
+}
+
+function removeBasket() {
+  baskets.length = 0;
+}
+
+let myDialog = document.getElementById("myModal"); 
+function openDialog() {
+  myDialog.showModal();
+  removeBasket();
+  getsupBasketPrice();
+  renderBasket();
+}
