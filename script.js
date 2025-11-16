@@ -1,6 +1,15 @@
 function init() {
+  renderHeaderMenu();
   renderDefaultDeshes();
   renderBasket();
+}
+
+function renderHeaderMenu() {
+  const headerContent = document.getElementById("menu-header");
+  for (let menuindex = 0; menuindex < category.length; menuindex++) {
+    const menuDishes = category[menuindex];
+    headerContent.innerHTML += getHeaderMenu(menuDishes);
+  }
 }
 
 function renderDefaultDeshes() {
@@ -8,83 +17,76 @@ function renderDefaultDeshes() {
   mainContent.innerHTML = "";
   for (let index = 0; index < dishes.length; index++) {
     const dishe = dishes[index];
-    mainContent.innerHTML += `
-    <div id="dishes-card" class="dishes-card">
-      <img src="${dishe.img}" alt="${dishe.name}">
-       <p>${dishe.name}</p>
-       <p>${dishe.description}</p>
-       <p>${dishe.price.toFixed(2)} €</p>
-       <button onclick="addDeshesToBasket(${
-         dishe.id
-       })"class="add-to-basket-button">+</button>
-    </div>`;
+    mainContent.innerHTML += getDefaultDeshes(dishe);
   }
 }
 
-function renderBasket() {
+function renderBasket(index) {
   const basketContent = document.getElementById("basket-content");
   basketContent.innerHTML = "";
   for (let basketindex = 0; basketindex < baskets.length; basketindex++) {
     const basket = baskets[basketindex];
-    basketContent.innerHTML += `
-        <img class="dishes-img" src="${basket.img}" alt=""${basket.name}>
-          <button onclick="moreDeshes(${(basket.id)})">+</button>
-            <span>${basket.amount}</span>
-          <button onclick="fewerDeshes(${(basket.id)})">-</button>`;
+    basketContent.innerHTML += getRenderBasket(basket, basketindex);
   }
 }
 
-function addDeshesToBasket(index) {
-  if (dishes.length > 0) {
-    let newDishes = dishes[index];
-    baskets.push(newDishes);
-    getsupBasketPrice(baskets);
-    renderBasket(baskets);
+function addDeshesToBasket(id) {
+  let dish = dishes.find((dishe) => dishe.id === id);
+  if (!dish) return;
+  let basket = baskets.find((bask) => bask.id === dish.id);
+  if (basket) {
+    basket.amount = (basket.amount || 0) + 1;
+  }else{
+   const newItem = Object.assign({}, dish, { amount: dish.amount || 1 });
+    baskets.push(newItem);
   }
+  getsupBasketPrice();
+  renderBasket();
 }
+
 
 function moreDeshes(index) {
-  if (baskets.length > 0) {
-    //let gesamt = document.getElementById("total-price-value");
-    //let lieferKosten = 3.5;
-    //let price = baskets[index].price;
-    let amount = 1;
-        amount += baskets[index].amount++;
-    //let totalPric = amount * price;
-    //let zuZahlen = lieferKosten + totalPric;
-    //console.log(amount);
-    //gesamt.innerText = zuZahlen.toFixed(2).replace(".", ",") + " €";
-    //getsupBasketPrice(baskets);
-    renderBasket(baskets);
-  }
+  const bask = baskets[index];
+  if(!bask)return;
+  bask.amount = (bask.amount || 0) + 1
+   getsupBasketPrice();
+   renderBasket();
 }
 
 // Todo Berechnung nicht ins minus gehen lassen wenn unter 0 removen
 
 function fewerDeshes(index) {
-  if (baskets.length > 0) {
-    //let gesamt = document.getElementById("total-price-value");
-    //let price = baskets[index].price;
-    let amount = 1;
-    //let totalPric = amount * price;
-        amount += baskets[index].amount--;
-    //console.log(amount, totalPric);
-    //getsupBasketPrice(baskets);
-    renderBasket(baskets);
-    //Object.keys(baskets).length
-    //return
+  const bask = baskets[index];
+  if (!bask) return;
+  bask.amount = (bask.amount || 0) - 1;
+  if (bask.amount <= 0) {
+    baskets.splice(index, 1);
   }
+  getsupBasketPrice();
+  renderBasket();
 }
 
 function getsupBasketPrice() {
+  const gesamt = document.getElementById("total-price-value");
+  let total = 0;
   for (let i = 0; i < baskets.length; i++) {
-    let gesamt = document.getElementById("total-price-value");
-    let lieferKosten = 3.5;
-    const turtelPrice = baskets[i].amount * baskets[i].price +lieferKosten;
-    let turtelGesamt = turtelPrice * baskets.length;
-    gesamt.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";
-    console.log(turtelPrice);
-    renderBasket(baskets);
-    return
+   const item = baskets[i];
+   total += (item.amount || 0) * (item.price || 0);
   }
+   const lieferKosten =  total > 0 ? 3.5 : 0;
+   const turtelGesamt = total + lieferKosten;
+   if(gesamt){
+     gesamt.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";
+   }
+  }
+
+
+function toogleMenu() {
+  let menuToggle = document.querySelectorAll("#header-content");
+  let menuContent = document.getElementById("menu-header");
+  for (let index = 0; index < menuToggle.length; index++) {
+    const menuItem = menuToggle[index];
+    menuItem.classList.toggle("isOpen");
+  }
+  menuContent.classList.toggle("isContentOpen");
 }

@@ -14,10 +14,10 @@ function getDefaultDeshes(dishe) {
     </div>`;
 }
 
-function getRenderBasket(basket, event) {
+function getRenderBasket(basket, index) {
   return `<div class="isDesh">
         <img class="dishes-img" src="${basket.img}" alt=""${basket.name}>
-          <button onclick="moreDeshes( ${basket.id})">+</button>
+          <button onclick="moreDeshes(${index})">+</button>
             <span>${basket.amount}</span>
-          <button onclick="fewerDeshes(${basket.id})">-</button> </div>`;
+          <button onclick="fewerDeshes(${index})">-</button> </div>`;
 }
