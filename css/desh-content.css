@@ -7,7 +7,6 @@
     height: 120px;
     border-radius: 8px;
     background-color: var(--card-background-color);
-   
     margin: 16px 0px;
     transition: background-color 0.3s ease;
 }
@@ -25,6 +24,7 @@
     padding: 8px;
     object-fit: cover;
 }
+
 .dishes-img{
     height: 35px;
 }
@@ -39,6 +39,17 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+}
+
+.isDesh{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--card-background-color);
+    border-radius: 8px;
+    margin: 8px 0;
 }
 
 
