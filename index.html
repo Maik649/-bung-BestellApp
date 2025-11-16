@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assets/Favicon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
+        <script src="./scripts/db.js"></script>
         <script src="./scripts/category-db.js"></script>
+        <script src="./scripts/getänke.js"></script>
+        <script src="./scripts/pasta.js"></script>
+        <script src="./scripts/salat.js"></script>
+        <script src="./scripts/toppings.js"></script>
         <script src="./scripts/bürger.js"></script>
         <script src="./scripts/pizza.js"></script>
         <script src="./scripts/templade/tamplade.js" defer></script>
         <script src="script.js" defer></script>
         <script src="./scripts/toggle.js" defer></script>
-        <script src="./scripts/db.js"></script>
         <title>BestellApp</title>
     </head>
 
@@ -21,7 +25,7 @@
             <div class="logo">
                 <img src="./assets/logo/Bestell App- Logo.svg" alt="BestellApp Logo">
             </div>
-            <div class="nav">
+            <div onclick="toogleMenu()" class="nav">
                 <div class="mobil-menu-icon">
                     <span></span>
                     <span></span>
@@ -39,7 +43,9 @@
                 <img id="star-img" src="../assets/img/icons/stern.png" alt="star-Icon">
             </div>
 
-            <div id="menu-header" class="menu-header"></div>
+            <div id="menu-header" class="menu-header">
+                
+            </div>
 
             <div class="content-wrepper">
                 <section id="deshes-content" class="deshes-content">
@@ -69,7 +75,11 @@
             </div>
         </main>
 
-        <footer></footer>
+        <footer>
+            <div class="logo">
+                <img src="./assets/Favicon/android-chrome-512x512.png" alt="BestellApp Logo">
+            </div>
+        </footer>
     </body>
 
 </html>
