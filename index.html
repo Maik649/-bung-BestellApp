@@ -23,8 +23,9 @@
     <body onload="init()">
         <header>
             <div class="logo">
-                <img src="./assets/logo/Bestell App- Logo.svg" alt="BestellApp Logo">
+                <a href="index.html"><img src="./assets/logo/Bestell App- Logo.svg" alt="BestellApp Logo"></a>
             </div>
+            <p class="showlink"><a onclick="openWarenkorb()">Warenkorb</a></p>
             <div onclick="toogleMenu()" class="nav">
                 <div class="mobil-menu-icon">
                     <span></span>
@@ -59,11 +60,12 @@
                             <span>Gesamt:</span>
                             <span id="total-price-value">0 €</span>
                         </div>
-                        <button id="order-button" class="order-button">Bestellen</button>
+                        <button onclick="openDialog()" id="order-button" class="order-button">Bestellen</button>
                     </div>
                     </div>
                 </section>
             </div>
+            <dialog closedby="any" id="myModal" class="my-dialog">Danke für ihre Bestellung.</dialog>
         </main>
         <footer>
             <div class="logo">
