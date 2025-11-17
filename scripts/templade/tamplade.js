@@ -4,7 +4,7 @@ function getHeaderMenu(category) {
                 </div>`;
 }
 
-function getDefaultDeshes(dishe) {
+function getDefaultDishes(dishe) {
   return `<div id="dishes-card" class="dishes-card">
       <img src="${dishe.img}" alt="${dishe.name}">
        <p>${dishe.name}</p>
