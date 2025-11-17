@@ -28,7 +28,21 @@ function renderBasket() {
     const basket = baskets[basketindex];
     basketContent.innerHTML += getRenderBasket(basket, basketindex);
   }
+  disableButton();
 }
+
+function disableButton() {
+  let button = document.getElementById("order-button");
+  if (baskets.length <= 0) {
+    button.setAttribute("disabled", true);
+    button.style.backgroundColor = "rgba(117, 116, 115, 1)";
+  }else{
+    button.removeAttribute("disabled");
+    button.style.backgroundColor = "rgb(255, 128, 0)";
+  }
+}
+
+    addDishesToBasket ? openDialog : (myDialog.innerText = "Wurde hinzugefugt");
 
 function addDishesToBasket(id) {
   let dish = dishes.find((dishe) => dishe.id === id);
@@ -44,7 +58,7 @@ function addDishesToBasket(id) {
   renderBasket();
 }
 
-function moreDeshes(index) {
+function moreDishes(index) {
   const bask = baskets[index];
   if(!bask)return;
   bask.amount = (bask.amount || 0) + 1
@@ -52,7 +66,7 @@ function moreDeshes(index) {
    renderBasket();
 }
 
-function fewerDeshes(index) {
+function fewerDishes(index) {
   const bask = baskets[index];
   if (!bask) return;
   bask.amount = (bask.amount || 0) - 1;
