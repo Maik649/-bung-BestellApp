@@ -40,7 +40,7 @@ function addDishesToBasket(id) {
    const newItem = Object.assign({}, dish, { amount: dish.amount || 1 });
     baskets.push(newItem);
   }
-  getsupBasketPrice();
+  getSupBasketPrice();
   renderBasket();
 }
 
@@ -48,7 +48,7 @@ function moreDeshes(index) {
   const bask = baskets[index];
   if(!bask)return;
   bask.amount = (bask.amount || 0) + 1
-   getsupBasketPrice();
+   getSupBasketPrice();
    renderBasket();
 }
 
@@ -98,7 +98,7 @@ function openDialog() {
      openDialogs.classList.toggle("isOpen");
   myDialog.showModal();
   removeBasket();
-  getsupBasketPrice();
+  getSupBasketPrice();
   renderBasket();
   setTime = setTimeout(closeDialog, 2000); 
 }
