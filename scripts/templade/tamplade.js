@@ -15,7 +15,7 @@ function getDefaultDeshes(dishe) {
 }
 
 function getRenderBasket(basket, index) {
-  return `<div class="isDesh">
+  return `<div class="isDish">
         <img class="dishes-img" src="${basket.img}" alt=""${basket.name}>
           <button onclick="moreDeshes(${index})">+</button>
             <span>${basket.amount}</span>

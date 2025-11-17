@@ -12,8 +12,8 @@ function renderHeaderMenu() {
   }
 }
 
-function renderDefaultDeshes() {
-  const mainContent = document.getElementById("deshes-content");
+function renderDifaultDeshes() {
+  const mainContent = document.getElementById("dishes-content");
   mainContent.innerHTML = "";
   for (let index = 0; index < dishes.length; index++) {
     const dishe = dishes[index];
@@ -21,7 +21,7 @@ function renderDefaultDeshes() {
   }
 }
 
-function renderBasket(index) {
+function renderBasket() {
   const basketContent = document.getElementById("basket-content");
   basketContent.innerHTML = "";
   for (let basketindex = 0; basketindex < baskets.length; basketindex++) {
@@ -59,11 +59,11 @@ function fewerDeshes(index) {
   if (bask.amount <= 0) {
     baskets.splice(index, 1);
   }
-  getsupBasketPrice();
+  getSupBasketPrice();
   renderBasket();
 }
 
-function getsupBasketPrice() {
+function getSupBasketPrice() {
   const gesamt = document.getElementById("total-price-value");
   let total = 0;
   for (let i = 0; i < baskets.length; i++) {
@@ -85,11 +85,6 @@ function toogleMenu() {
     menuItem.classList.toggle("isOpen");
   }
   menuContent.classList.toggle("isContentOpen");
-}
-
-function openWarenkorb(){
-   let openWarenkorp = document.querySelector(".basket-container");
-   openWarenkorp.classList.toggle("isOpen");
 }
 
 function removeBasket() {
