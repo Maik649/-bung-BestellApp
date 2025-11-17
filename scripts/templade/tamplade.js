@@ -10,7 +10,7 @@ function getDefaultDeshes(dishe) {
        <p>${dishe.name}</p>
        <p>${dishe.description}</p>
        <p>${dishe.price.toFixed(2).replace('.', ',')} €</p>
-       <button onclick="addDeshesToBasket(${dishe.id})"class="add-to-basket-button">+</button>
+       <button onclick="addDishesToBasket(${dishe.id})"class="add-to-basket-button">+</button>
     </div>`;
 }
 

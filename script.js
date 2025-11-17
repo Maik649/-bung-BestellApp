@@ -12,7 +12,7 @@ function renderHeaderMenu() {
   }
 }
 
-function renderDifaultDeshes() {
+function renderDefaultDeshes() {
   const mainContent = document.getElementById("dishes-content");
   mainContent.innerHTML = "";
   for (let index = 0; index < dishes.length; index++) {
@@ -30,7 +30,7 @@ function renderBasket() {
   }
 }
 
-function addDeshesToBasket(id) {
+function addDishesToBasket(id) {
   let dish = dishes.find((dishe) => dishe.id === id);
   if (!dish) return;
   let basket = baskets.find((bask) => bask.id === dish.id);
