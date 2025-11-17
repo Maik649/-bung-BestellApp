@@ -71,9 +71,18 @@
   }
 
   .headerContent {
-   
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    background-color: white;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 8px 0;
+    border-radius: 8px;
   }
 
   .isOpen {
