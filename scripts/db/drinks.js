@@ -1,6 +1,6 @@
-let Getänke = [
+let drinks = [
   {
-    id: 25,
+    id: 0,
     name: "Cola",
     price: 3.0,
     description: "mit Zucker, Koffein, Kohlensäure",
@@ -8,7 +8,7 @@ let Getänke = [
     img: "./assets/img/cola.jpg",
   },
   {
-    id: 26,
+    id: 1,
     name: "Fanta",
     price: 3.0,
     description: "mit Zucker, Orangensaft, Kohlensäure",
@@ -16,7 +16,7 @@ let Getänke = [
     img: "./assets/img/fanta.jpg",
   },
   {
-    id: 27,
+    id: 2,
     name: "Sprite",
     price: 3.0,
     description: "mit Zucker, Zitronensaft, Kohlensäure",
@@ -24,7 +24,7 @@ let Getänke = [
     img: "./assets/img/sprite.jpg",
   },
   {
-    id: 28,
+    id: 3,
     name: "Apfelsaft",
     price: 3.0,
     description: "mit Zucker, Apfelsaft, Kohlensäure",
@@ -32,7 +32,7 @@ let Getänke = [
     img: "./assets/img/apfelsaft.jpg",
   },
   {
-    id: 29,
+    id: 4,
     name: "Orangensaft",
     price: 3.0,
     description: "mit Zucker, Orangensaft, Kohlensäure",

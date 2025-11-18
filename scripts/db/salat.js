@@ -1,6 +1,6 @@
-let Salat = [
+let salat = [
   {
-    id: 15,
+    id: 0,
     name: "Salat Caprese",
     price: 9.0,
     description: "mit Tomaten, Mozzarella, Basilikum",
@@ -8,7 +8,7 @@ let Salat = [
     img: "./assets/img/salat_caprese.jpg",
   },
   {
-    id: 16,
+    id: 1,
     name: "Salat Caesar",
     price: 10.0,
     description: "mit Hähnchen, Parmesan, Croutons",
@@ -16,7 +16,7 @@ let Salat = [
     img: "./assets/img/salat_caesar.jpg",
   },
   {
-    id: 17,
+    id: 2,
     name: "Salat Nicoise",
     price: 10.0,
     description: "mit Thunfisch, Oliven, Ei, Bohnen",
@@ -24,7 +24,7 @@ let Salat = [
     img: "./assets/img/salat_nicoise.jpg",
   },
   {
-    id: 18,
+    id: 3,
     name: "Salat Waldorf",
     price: 9.0,
     description: "mit Äpfeln, Walnüssen, Sellerie",
@@ -32,7 +32,7 @@ let Salat = [
     img: "./assets/img/salat_waldorf.jpg",
   },
   {
-    id: 19,
+    id: 4,
     name: "Salat Griechisch",
     price: 9.0,
     description: "mit Oliven, Feta, Gurken, Tomaten",

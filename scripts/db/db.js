@@ -2,7 +2,6 @@
 let dishes = [
   {
     id: 0,
-    category: "Pizza",
     name: "Pizza Margherita",
     price: 15.0,
     description: "mit Tomaten, Mozzarella, Basilikum",
@@ -12,7 +11,6 @@ let dishes = [
   },
   {
     id: 1,
-    category: "Pizza",
     name: "Pizza Salami",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Salami",
@@ -21,7 +19,6 @@ let dishes = [
   },
   {
     id: 2,
-    category: "Pizza",
     name: "Pizza Funghi",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Champignons",
@@ -30,7 +27,6 @@ let dishes = [
   },
   {
     id: 3,
-    category: "Pizza",
     name: "Pizza Prosciutto",
     price: 16.0,
     description: "mit Tomaten, Mozzarella, Schinken",
@@ -39,7 +35,6 @@ let dishes = [
   },
   {
     id: 4,
-    category: "Pizza",
     name: "Pizza Stagioni",
     price: 17.0,
     description: "mit Tomaten, Mozzarella, Schinken, Champignons, Oliven",
@@ -56,7 +51,6 @@ let dishes = [
   },
   {
     id: 6,
-
     name: "Burger Bacon",
     price: 13.0,
     description: "mit Rindfleisch, Käse, Tomaten, Gurken, Salat, Bacon",
@@ -65,7 +59,6 @@ let dishes = [
   },
   {
     id: 7,
-
     name: "Burger Veggie",
     price: 11.0,
     description: "mit Gemüse, Käse, Tomaten, Gurken, Salat",
@@ -74,7 +67,6 @@ let dishes = [
   },
   {
     id: 8,
-
     name: "Burger Chicken",
     price: 12.0,
     description: "mit Hähnchen, Käse, Tomaten, Gurken, Salat",
@@ -83,7 +75,6 @@ let dishes = [
   },
   {
     id: 9,
-
     name: "Burger Fish",
     price: 13.0,
     description: "mit Fisch, Käse, Tomaten, Gurken, Salat",
@@ -92,7 +83,6 @@ let dishes = [
   },
   {
     id: 10,
-
     name: "Pasta Carbonara",
     price: 12.0,
     description: "mit Speck, Ei, Sahnesauce",
@@ -101,7 +91,6 @@ let dishes = [
   },
   {
     id: 11,
-
     name: "Pasta Bolognese",
     price: 12.0,
     description: "mit Hackfleischsauce",
@@ -110,7 +99,6 @@ let dishes = [
   },
   {
     id: 12,
-
     name: "Pasta Aglio e Olio",
     price: 11.0,
     description: "mit Knoblauch, Olivenöl, Peperoni",
@@ -119,7 +107,6 @@ let dishes = [
   },
   {
     id: 13,
-
     name: "Pasta Arrabiata",
     price: 11.0,
     description: "mit Tomatensauce, Peperoni",
@@ -128,7 +115,6 @@ let dishes = [
   },
   {
     id: 14,
-
     name: "Pasta Pesto",
     price: 11.0,
     description: "mit Basilikum, Pinienkernen, Parmesan",
@@ -137,7 +123,6 @@ let dishes = [
   },
   {
     id: 15,
-
     name: "Salat Caprese",
     price: 9.0,
     description: "mit Tomaten, Mozzarella, Basilikum",
@@ -146,7 +131,6 @@ let dishes = [
   },
   {
     id: 16,
-
     name: "Salat Caesar",
     price: 10.0,
     description: "mit Hähnchen, Parmesan, Croutons",
@@ -155,7 +139,6 @@ let dishes = [
   },
   {
     id: 17,
-
     name: "Salat Nicoise",
     price: 10.0,
     description: "mit Thunfisch, Oliven, Ei, Bohnen",
@@ -164,7 +147,6 @@ let dishes = [
   },
   {
     id: 18,
-
     name: "Salat Waldorf",
     price: 9.0,
     description: "mit Äpfeln, Walnüssen, Sellerie",
@@ -173,7 +155,6 @@ let dishes = [
   },
   {
     id: 19,
-
     name: "Salat Griechisch",
     price: 9.0,
     description: "mit Oliven, Feta, Gurken, Tomaten",

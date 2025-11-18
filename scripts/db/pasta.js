@@ -1,5 +1,5 @@
-let Pasta =[{
-    id: 10,
+let pasta =[{
+    id: 0,
     name: "Pasta Carbonara",
     price: 12.0,
     description: "mit Speck, Ei, Sahnesauce",
@@ -7,7 +7,7 @@ let Pasta =[{
     img: "./assets/img/pasta_carbonara.jpg",
   },
   {
-    id: 11,
+    id: 1,
     name: "Pasta Bolognese",
     price: 12.0,
     description: "mit Hackfleischsauce",
@@ -15,7 +15,7 @@ let Pasta =[{
     img: "./assets/img/pasta_bolognese.jpg",
   },
   {
-    id: 12,
+    id: 2,
     name: "Pasta Aglio e Olio",
     price: 11.0,
     description: "mit Knoblauch, Olivenöl, Peperoni",
@@ -23,7 +23,7 @@ let Pasta =[{
     img: "./assets/img/pasta_aglio_e_olio.jpg",
   },
   {
-    id: 13,
+    id: 3,
     name: "Pasta Arrabiata",
     price: 11.0,
     description: "mit Tomatensauce, Peperoni",
@@ -31,7 +31,7 @@ let Pasta =[{
     img: "./assets/img/pasta_arrabiata.jpg",
   },
   {
-    id: 14,
+    id: 4,
     name: "Pasta Pesto",
     price: 11.0,
     description: "mit Basilikum, Pinienkernen, Parmesan",

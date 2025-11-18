@@ -1,6 +1,6 @@
-let Toppigs = [
+let toppigs = [
   {
-    id: 20,
+    id: 0,
     name: "Tiramisu",
     price: 5.0,
     description: "mit Mascarpone, Kaffee, Löffelbiskuits",
@@ -8,7 +8,7 @@ let Toppigs = [
     img: "./assets/img/tiramisu.jpg",
   },
   {
-    id: 21,
+    id: 1,
     name: "Panna Cotta",
     price: 5.0,
     description: "mit Sahne, Vanille, Erdbeersauce",
@@ -16,7 +16,7 @@ let Toppigs = [
     img: "./assets/img/panna_cotta.jpg",
   },
   {
-    id: 22,
+    id: 2,
     name: "Tarte Tatin",
     price: 5.0,
     description: "mit Äpfeln, Blätterteig, Vanilleeis",
@@ -24,7 +24,7 @@ let Toppigs = [
     img: "./assets/img/tarte_tatin.jpg",
   },
   {
-    id: 23,
+    id: 3,
     name: "Crème Brûlée",
     price: 5.0,
     description: "mit Eigelb, Zucker, Vanille",
@@ -32,7 +32,7 @@ let Toppigs = [
     img: "./assets/img/creme_brulee.jpg",
   },
   {
-    id: 24,
+    id: 4,
     name: "Mousse au Chocolat",
     price: 5.0,
     description: "mit Schokolade, Eigelb, Sahne",

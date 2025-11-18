@@ -1,5 +1,5 @@
 
-let Pizza = [
+let pizza = [
   {
     id: 0,
     category: "Pizza",
