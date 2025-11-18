@@ -47,7 +47,7 @@
   list-style: none;
   text-decoration: underline;
   cursor: pointer;
-  color: var(--text-color);
+  color: grey;
 }
 
 @media (max-width: 768px) {
@@ -67,7 +67,6 @@
     visibility: visible;
     transition: ease-in-out 80ms;
     height: 100%;
-  
   }
 
   .headerContent {

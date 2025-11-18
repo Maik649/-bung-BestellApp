@@ -64,3 +64,22 @@
     transition: background-color 0.3s ease;
     margin: 16px 0;
 }
+
+@media (max-width: 1029px) {
+    .dishes-card{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .dishes-card img{
+        width: 120px;
+        height: 60px;
+    }
+
+    .isDish{
+        flex-direction: column;
+        height: auto;
+        padding: 8px 0;
+    }
+}
