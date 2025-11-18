@@ -2,12 +2,12 @@ const headerContent = document.getElementById("menu-header");
 const mainContent = document.getElementById("dishes-content");
 const basketContent = document.getElementById("basket-content");
 const gesamt = document.getElementById("total-price-value");
-let myDialog = document.getElementById("myModal");
-let openDialogs = document.querySelector("#myModal");
-let addDishe = document.querySelector("#myModal2");
-let button = document.getElementById("order-button");
-let menuToggle = document.querySelectorAll("#header-content");
-let menuContent = document.getElementById("menu-header");
+const myDialog = document.getElementById("myModal");
+const openDialogs = document.querySelector("#myModal");
+const addDishe = document.querySelector("#myModal2");
+const button = document.getElementById("order-button");
+const menuToggle = document.querySelectorAll("#header-content");
+const menuContent = document.getElementById("menu-header");
 
 function init() {
   renderHeaderMenu();
