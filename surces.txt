@@ -9,3 +9,4 @@ Pizza:
 Bild von <a href="https://pixabay.com/de/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5661748">Engin Akyurt</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5661748">Pixabay</a>
 Salat:
 Bild von <a href="https://pixabay.com/de/users/atulpathria-4158076/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3990416">Atul Pathria</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3990416">Pixabay</a>
+<a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Ilham Fitrotul Hayat - Flaticon</a>

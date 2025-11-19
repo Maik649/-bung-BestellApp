@@ -6,6 +6,7 @@ let drinks = [
     description: "mit Zucker, Koffein, Kohlensäure",
     amount: 0,
     img: "./assets/img/cola.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 26,
@@ -14,6 +15,7 @@ let drinks = [
     description: "mit Zucker, Orangensaft, Kohlensäure",
     amount: 0,
     img: "./assets/img/fanta.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 27,
@@ -22,6 +24,7 @@ let drinks = [
     description: "mit Zucker, Zitronensaft, Kohlensäure",
     amount: 0,
     img: "./assets/img/sprite.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 28,
@@ -30,6 +33,7 @@ let drinks = [
     description: "mit Zucker, Apfelsaft, Kohlensäure",
     amount: 0,
     img: "./assets/img/apfelsaft.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 29,
@@ -38,5 +42,6 @@ let drinks = [
     description: "mit Zucker, Orangensaft, Kohlensäure",
     amount: 0,
     img: "./assets/img/orangensaft.jpg",
+    icon: "./assets/img/delete.png",
   },
 ];

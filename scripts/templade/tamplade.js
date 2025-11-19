@@ -4,7 +4,7 @@ function getHeaderMenu(category) {
                 </div>`;
 }
 
-function getDefaultDishes(dishe, result, index) {
+function getDefaultDishes(dishe) {
   return `<div id="dishes-card" class="dishes-card">
       <img src="${dishe.img}" alt="${dishe.name}">
        <p>${dishe.name}</p>
@@ -15,10 +15,13 @@ function getDefaultDishes(dishe, result, index) {
 }
 
 function getRenderBasket(basket, index) {
+ 
   return `<div class="isDish">
-        <img class="dishes-img" src="${basket.img}" alt=""${basket.name}>
+          <p>${basket.name}</p>
         <p>${basket.price.toFixed(2).replace(".", ",") + "€"}</p>
           <button onclick="moreDishes(${index})">+</button>
             <span>${basket.amount}</span>
-          <button onclick="fewerDishes(${index})">-</button> </div>`;
+          <button onclick="fewerDishes(${index})">-</button> 
+          <img onclick="fewerDishes(${index})" class"delete-item" src="${basket.icon}" alt="Papierkorp">
+          </div>`;
 }

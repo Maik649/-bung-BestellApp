@@ -54,6 +54,7 @@
 
 .order-button{
     padding: 12px 24px;
+    width: 100%;
     background-color: var(--header-backround-color);
     color: var(--text-color);
     border: none;
@@ -78,7 +79,6 @@
     }
 
     .isDish{
-        flex-direction: column;
         height: auto;
         width: 80%;
         padding: 8px 0;

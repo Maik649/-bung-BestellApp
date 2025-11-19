@@ -60,6 +60,10 @@ header .logo img {
 .dishes-content {
   flex: 3;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .basket-wrepper {
@@ -197,6 +201,7 @@ Footer .logo img {
     padding: 0;
     width: 100%;
     background-color: #fff;
+    bottom: 0;
   }
 
   .basket-container {
@@ -216,24 +221,9 @@ Footer .logo img {
     visibility: visible;
     flex-direction: column;
     position: sticky;
-    min-height: 100vh;
+    min-height: 100%;
     z-index: 10;
     background-color: #fff;
-  }
-
-  .showlink {
-    opacity: 1;
-    visibility: visible;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    font-size: 2.2rem;
-    height: 55px;
-    width: 100%;
-    background-color: blue;
-    border: none;
-    border-radius: 16px;
-    z-index: 11;
   }
 
   .basket-header {
@@ -248,6 +238,33 @@ Footer .logo img {
   .dishes-card {
     flex-direction: column;
     height: 100%;
+  }
+
+  .isDish img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .showlink {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .showlinkIsOpen {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 1.9rem;
+    height: 55px;
+    width: 100%;
+    background-color: var(--header-backround-color);
+    border: none;
+    border-radius: 16px;
+    z-index: 11;
+    bottom: 0px;
   }
 }
 

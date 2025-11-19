@@ -70,6 +70,10 @@ function addDishesToBasket(id) {
     const newItem = Object.assign({}, dish, { amount: dish.amount || 1 });
     baskets.push(newItem);
   }
+  let buttonWarenkorb = document.querySelector(".showlink");
+  if (baskets.length > 0) {
+    buttonWarenkorb.classList.add("showlinkIsOpen");
+  }
   getSupBasketPrice();
   renderBasket();
   openAddDishes();
@@ -95,7 +99,6 @@ function fewerDishes(index) {
 }
 
 function getSupBasketPrice() {
- 
   let total = 0;
   for (let i = 0; i < baskets.length; i++) {
     const item = baskets[i];
@@ -117,13 +120,11 @@ function toogleMenu() {
 }
 
 function openWarenkorb() {
-  let height = screen.height;
-  let screenHeight = document.querySelector(".basket-wrepper");
-  screenHeight.setAttribute("height", height);
-  console.log(`height`, height);
   let openWarenkorp = document.querySelector(".basket-container");
-
   openWarenkorp.classList.toggle("isOpen");
+  window.scroll({
+    top: 0,
+  });
 }
 
 function removeBasket() {
@@ -136,7 +137,7 @@ function openDialog() {
   removeBasket();
   getSupBasketPrice();
   renderBasket();
-  setTime = setTimeout(closeDialog, 2000);
+  setTime = setTimeout(closeDialog, 1000);
 }
 
 function openAddDishes() {
@@ -145,7 +146,7 @@ function openAddDishes() {
   addDishe.innerText = "Wurde Hinzugefügt";
   getSupBasketPrice();
   renderBasket();
-  setTime = setTimeout(closeDialog, 2000);
+  setTime = setTimeout(closeDialog, 500);
 }
 
 function closeDialog() {
@@ -153,5 +154,3 @@ function closeDialog() {
   addDishe.classList.remove("isOpen");
   myDialog.close();
 }
-
-

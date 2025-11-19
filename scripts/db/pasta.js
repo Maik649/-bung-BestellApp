@@ -1,18 +1,21 @@
-let pasta =[{
+let pasta = [
+  {
     id: 0,
     name: "Pasta Carbonara",
-    price: 12.00,
+    price: 12.0,
     description: "mit Speck, Ei, Sahnesauce",
     amount: 0,
     img: "./assets/img/pasta_carbonara.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 1,
     name: "Pasta Bolognese",
-    price: 12.00,
+    price: 12.0,
     description: "mit Hackfleischsauce",
     amount: 0,
     img: "./assets/img/pasta_bolognese.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 2,
@@ -21,6 +24,7 @@ let pasta =[{
     description: "mit Knoblauch, Olivenöl, Peperoni",
     amount: 0,
     img: "./assets/img/pasta_aglio_e_olio.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 3,
@@ -29,6 +33,7 @@ let pasta =[{
     description: "mit Tomatensauce, Peperoni",
     amount: 0,
     img: "./assets/img/pasta_arrabiata.jpg",
+    icon: "./assets/img/delete.png",
   },
   {
     id: 4,
@@ -37,5 +42,6 @@ let pasta =[{
     description: "mit Basilikum, Pinienkernen, Parmesan",
     amount: 0,
     img: "./assets/img/pasta_pesto.jpg",
+    icon: "./assets/img/delete.png",
   },
-]
+];
