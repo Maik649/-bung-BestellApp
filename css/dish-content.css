@@ -26,7 +26,7 @@
 }
 
 .dishes-img{
-    height: 35px;
+    height: 55px;
 }
 
 .add-to-basket-button{
@@ -80,6 +80,7 @@
     .isDish{
         flex-direction: column;
         height: auto;
+        width: 80%;
         padding: 8px 0;
     }
 }

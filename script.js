@@ -116,6 +116,16 @@ function toogleMenu() {
   menuContent.classList.toggle("isContentOpen");
 }
 
+function openWarenkorb() {
+  let height = screen.height;
+  let screenHeight = document.querySelector(".basket-wrepper");
+  screenHeight.setAttribute("height", height);
+  console.log(`height`, height);
+  let openWarenkorp = document.querySelector(".basket-container");
+
+  openWarenkorp.classList.toggle("isOpen");
+}
+
 function removeBasket() {
   baskets.length = 0;
 }
