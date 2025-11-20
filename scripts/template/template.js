@@ -15,19 +15,7 @@ function getDefaultDishes(dishe) {
 }
 
 function getRenderBasket() {
-  return `<div class="basket-header">
-                        <h2>Warenkorb</h2>
-                    </div>
-                    <div id="basket-content" class="basket-content">
-                    
-                    </div>
-                    <div class="basket-footer">
-                        <span>Lieferkosten: 3,50€</span>
-                        <div class="total-price">
-                            <span>Gesamt:</span>
-                            <span id="total-price-value">0,00 €</span>
-                        </div>
-<button onclick="openDialog()" id="order-button" class="order-button">Bestellen</button>`;
+  return ``;
 }
 
 function getRenderBasketItem(basket, index) {
@@ -40,9 +28,7 @@ function getRenderBasketItem(basket, index) {
               <button onclick="moreDishes(${index})">+</button>
                 <span>${basket.amount}</span>
               <button onclick="fewerDishes(${index})">-</button> 
-                <img onclick="removeDish(${index})" class"delete-item" src="${
-    basket.icon
-  }" alt="Papierkorp">
+                <img onclick="removeDish(${index})" class"delete-item" src="${basket.icon}" alt="Papierkorp">
             </div>
           </div>`;
 }

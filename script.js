@@ -1,7 +1,8 @@
 const headerContent = document.getElementById("menu-header");
 const mainContent = document.getElementById("dishes-content");
 const dishesFrame = document.getElementById("dishes-content");
-const gesamt = document.getElementById("total-price-value");
+const gesamtPrice = document.getElementById("total-price-value");
+const PriceVSal = document.getElementById("price-value");
 const basketContent = document.getElementById("basket-container");
 const myDialog = document.getElementById("myModal");
 const openDialogs = document.querySelector("#myModal");
@@ -14,7 +15,7 @@ const buttonWarenkorb = document.querySelector(".showlink");
 function init() {
   renderHeaderMenu();
   renderDefaultDishes();
-  renderBasket();
+  getSupBasketPrice();
 }
 
 function renderHeaderMenu() {
@@ -42,11 +43,6 @@ function renderDefaultDishes() {
   }
 }
 
-function renderBasket() {
-  basketContent.innerHTML = "";
-  basketContent.innerHTML += getRenderBasket();
-}
-
 function renderBasketItem() {
  const basketItem = document.getElementById("basket-content");
   basketItem.innerHTML = "";
@@ -54,6 +50,7 @@ function renderBasketItem() {
     const basket = baskets[basketindex];
     basketItem.innerHTML += getRenderBasketItem(basket, basketindex);
   }
+  disableButton();
 }
 
 function disableButton() {
@@ -116,8 +113,10 @@ function getSupBasketPrice() {
   }
   const lieferKosten = total > 0 ? 3.5 : 0;
   const turtelGesamt = total + lieferKosten;
-  if (gesamt) {
-    gesamt.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";
+  if (gesamtPrice) {
+    gesamtPrice.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";
+    PriceVSal.innerText = turtelGesamt.toFixed(2).replace(".", ",") + " €";;
+    renderBasketItem();
   }
 }
 
@@ -138,6 +137,7 @@ function openWarenkorb() {
     });
     document.body.style.overflow = "hidden";
   }
+  renderBasketItem();
 }
 
 function removeBasket() {
@@ -150,8 +150,7 @@ function openDialog() {
   removeBasket();
   renderBasketItem();
   getSupBasketPrice();
-  renderBasket();
-  setTime = setTimeout(closeDialog, 800);
+  setTime = setTimeout(closeDialog, 900);
 }
 
 function closeDialog() {

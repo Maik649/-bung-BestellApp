@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         <script src="script.js" defer></script>
         <title>BestellApp</title>
     </head>
+
     <body onload="init()">
         <header>
             <div class="logo">
@@ -37,7 +39,7 @@
             <h2>à la carte Restaurant</h2>
 
             <div class="bewertungen">
-                  <p>Bewertungen: (4,2 von 5 sternen)</p>
+                <p>Bewertungen: (4,2 von 5 sternen)</p>
                 <img id="star-img" src="./assets/img/icons/stern.png" alt="star-Icon">
             </div>
 
@@ -47,14 +49,24 @@
                 <section id="dishes-content" class="dishes-content"></section>
                 <section id="basket-wrepper" class="basket-wrepper">
                     <div id="basket-container" class="basket-container">
-                    
-                    </div>
+                        <div class="basket-header">
+                            <h2>Warenkorb</h2>
+                        </div>
+                        <div id="basket-content" class="basket-content"></div>
+                        <div class="basket-footer">
+                            <span>Lieferkosten: 3,50€</span>
+                            <div class="total-price">
+                                <span>Gesamt:</span>
+                                <span id="total-price-value"></span>
+                            </div>
+                            <button onclick="openDialog()" id="order-button" class="order-button">Bestellen</button>
+                        </div>
                     </div>
                 </section>
             </div>
             <dialog closedby="any" id="myModal" class="my-dialog">Danke für ihre Bestellung.</dialog>
             <dialog closedby="any" id="myModal2" class="my-dialog">Hinzugefügt</dialog>
-            <button class="showlink" onclick="openWarenkorb()">Warenkorb <span id="total-price-value"></span></button>
+            <button class="showlink" onclick="openWarenkorb()">Warenkorb <span id="price-value"></span></button>
         </main>
         <footer>
             <div class="logo">
@@ -62,4 +74,5 @@
             </div>
         </footer>
     </body>
+
 </html>
