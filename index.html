@@ -13,7 +13,7 @@
         <script src="./scripts/db/toppings.js"></script>
         <script src="./scripts/db/burger.js"></script>
         <script src="./scripts/db/pizza.js"></script>
-        <script src="./scripts/templade/tamplade.js" defer></script>
+        <script src="./scripts/template/template.js" defer></script>
         <script src="script.js" defer></script>
         <title>BestellApp</title>
     </head>
@@ -46,26 +46,15 @@
             <div class="content-wrepper">
                 <section id="dishes-content" class="dishes-content"></section>
                 <section id="basket-wrepper" class="basket-wrepper">
-                    <div class="basket-container">
-                    <div class="basket-header">
-                        <h2>Warenkorb</h2>
-                    </div>
-                    <div id="basket-content" class="basket-content">
-                    </div>
-                    <div class="basket-footer">
-                        <span>Lieferkosten: 3,50€</span>
-                        <div class="total-price">
-                            <span>Gesamt:</span>
-                            <span id="total-price-value">0,00 €</span>
-                        </div>
-                        <button onclick="openDialog()" id="order-button" class="order-button">Bestellen</button>
+                    <div id="basket-container" class="basket-container">
+                    
                     </div>
                     </div>
                 </section>
             </div>
             <dialog closedby="any" id="myModal" class="my-dialog">Danke für ihre Bestellung.</dialog>
             <dialog closedby="any" id="myModal2" class="my-dialog">Hinzugefügt</dialog>
-            <button class="showlink" onclick="openWarenkorb()">Warenkorb</button>
+            <button class="showlink" onclick="openWarenkorb()">Warenkorb <span id="total-price-value"></span></button>
         </main>
         <footer>
             <div class="logo">
