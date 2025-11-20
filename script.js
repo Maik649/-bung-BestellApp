@@ -1,13 +1,15 @@
 const headerContent = document.getElementById("menu-header");
 const mainContent = document.getElementById("dishes-content");
-const basketContent = document.getElementById("basket-content");
+const dishesFrame = document.getElementById("dishes-content");
 const gesamt = document.getElementById("total-price-value");
+const basketContent = document.getElementById("basket-container");
 const myDialog = document.getElementById("myModal");
 const openDialogs = document.querySelector("#myModal");
 const addDishe = document.querySelector("#myModal2");
 const button = document.getElementById("order-button");
 const menuToggle = document.querySelectorAll("#header-content");
 const menuContent = document.getElementById("menu-header");
+const buttonWarenkorb = document.querySelector(".showlink");
 
 function init() {
   renderHeaderMenu();
@@ -23,7 +25,6 @@ function renderHeaderMenu() {
 }
 
 function renderDishesNavi(array) {
-  const dishesFrame = document.getElementById("dishes-content");
   dishesFrame.innerHTML = "";
   if (category) {
     for (let index = 0; index < array.length; index++) {
@@ -43,11 +44,16 @@ function renderDefaultDishes() {
 
 function renderBasket() {
   basketContent.innerHTML = "";
+  basketContent.innerHTML += getRenderBasket();
+}
+
+function renderBasketItem() {
+ const basketItem = document.getElementById("basket-content");
+  basketItem.innerHTML = "";
   for (let basketindex = 0; basketindex < baskets.length; basketindex++) {
     const basket = baskets[basketindex];
-    basketContent.innerHTML += getRenderBasket(basket, basketindex);
+    basketItem.innerHTML += getRenderBasketItem(basket, basketindex);
   }
-  disableButton();
 }
 
 function disableButton() {
@@ -70,13 +76,12 @@ function addDishesToBasket(id) {
     const newItem = Object.assign({}, dish, { amount: dish.amount || 1 });
     baskets.push(newItem);
   }
-  let buttonWarenkorb = document.querySelector(".showlink");
+  
   if (baskets.length > 0) {
-    buttonWarenkorb.classList.add("showlinkIsOpen");
+      buttonWarenkorb.classList.add("showlinkIsOpen");
   }
   getSupBasketPrice();
-  renderBasket();
-  openAddDishes();
+  renderBasketItem();
 }
 
 function moreDishes(index) {
@@ -84,7 +89,7 @@ function moreDishes(index) {
   if (!bask) return;
   bask.amount = (bask.amount || 0) + 1;
   getSupBasketPrice();
-  renderBasket();
+  renderBasketItem();
 }
 
 function fewerDishes(index) {
@@ -95,7 +100,13 @@ function fewerDishes(index) {
     baskets.splice(index, 1);
   }
   getSupBasketPrice();
-  renderBasket();
+  renderBasketItem();
+}
+function removeDish(index){
+  baskets.splice(index, 1);
+  getSupBasketPrice();
+  renderBasketItem();
+  
 }
 
 function getSupBasketPrice() {
@@ -119,12 +130,15 @@ function toogleMenu() {
   menuContent.classList.toggle("isContentOpen");
 }
 
+let openWarenkorp = document.querySelector(".basket-container");
 function openWarenkorb() {
-  let openWarenkorp = document.querySelector(".basket-container");
   openWarenkorp.classList.toggle("isOpen");
-  window.scroll({
-    top: 0,
-  });
+  if (openWarenkorp) {
+    window.scroll({
+      top: 0,
+    });
+    document.body.style.overflow = "hidden";
+  }
 }
 
 function removeBasket() {
@@ -135,22 +149,18 @@ function openDialog() {
   openDialogs.classList.toggle("isOpen");
   myDialog.showModal();
   removeBasket();
+  renderBasketItem();
   getSupBasketPrice();
   renderBasket();
-  setTime = setTimeout(closeDialog, 1000);
+  setTime = setTimeout(closeDialog, 800);
 }
 
-function openAddDishes() {
-  addDishe.classList.toggle("isOpen");
-  addDishe.showModal();
-  addDishe.innerText = "Wurde Hinzugefügt";
-  getSupBasketPrice();
-  renderBasket();
-  setTime = setTimeout(closeDialog, 500);
-}
 
 function closeDialog() {
   openDialogs.classList.remove("isOpen");
   addDishe.classList.remove("isOpen");
+  buttonWarenkorb.classList.remove("showlinkIsOpen");
+   openWarenkorp.classList.toggle("isOpen");
+   document.body.style.overflow = "scroll";
   myDialog.close();
 }

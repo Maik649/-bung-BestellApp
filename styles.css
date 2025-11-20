@@ -12,6 +12,7 @@ body {
 h2 {
   text-align: center;
   margin-top: 20px;
+  font-size: 30px;
 }
 
 main {
@@ -67,11 +68,12 @@ header .logo img {
 }
 
 .basket-wrepper {
-  flex: 1;
-  border: 1px solid #ccc;
+  flex: 2;
   padding: 10px;
   background-color: #f9f9f9;
   width: 100%;
+  overflow: hidden;
+  
 }
 
 .basket-container {
@@ -99,6 +101,12 @@ header .logo img {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.isDish img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 }
 
 footer {
@@ -233,11 +241,6 @@ Footer .logo img {
   .deshes-content {
     flex: 3;
     width: 100%;
-  }
-
-  .dishes-card {
-    flex-direction: column;
-    height: 100%;
   }
 
   .isDish img {
