@@ -76,7 +76,6 @@ function addDishesToBasket(id) {
     const newItem = Object.assign({}, dish, { amount: dish.amount || 1 });
     baskets.push(newItem);
   }
-  
   if (baskets.length > 0) {
       buttonWarenkorb.classList.add("showlinkIsOpen");
   }
@@ -102,11 +101,11 @@ function fewerDishes(index) {
   getSupBasketPrice();
   renderBasketItem();
 }
+
 function removeDish(index){
   baskets.splice(index, 1);
   getSupBasketPrice();
   renderBasketItem();
-  
 }
 
 function getSupBasketPrice() {
@@ -154,7 +153,6 @@ function openDialog() {
   renderBasket();
   setTime = setTimeout(closeDialog, 800);
 }
-
 
 function closeDialog() {
   openDialogs.classList.remove("isOpen");
