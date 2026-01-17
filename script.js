@@ -1,4 +1,3 @@
-
 const mainContent = document.getElementById("main-content");
 const dishesFrame = document.getElementById("dishes-content");
 const gesamtPrice = document.getElementById("total-price-value");
