@@ -1,30 +1,27 @@
 let category = [
   {
-    id: 0,
-    selector: "dishes",
-    name: "Alle",
-    bewertung: "4,2 von 5",
-  },
-  {
     id: 1,
-    selector: "burger",
-    name: "Burger",
-    img: "../assets/img/CategoryBurger.jpg",
-    bewertung: "4,2 von 5",
-  },
-  {
-    id: 2,
-    selector: "pasta",
-    name: "Pasta",
-    img: "./assets/img/pasta_aglio_e_olio.jpg",
-    bewertung: "4,2 von 5",
-  },
-  {
-    id: 3,
     selector: "pizza",
     name: "Pizza",
     img: "../assets/img/CategoryPizza-.jpg",
     bewertung: "4,2 von 5",
+    items: typeof pizza !== "undefined" ? pizza : [],
+  },
+  {
+    id: 2,
+    selector: "burger",
+    name: "Burger",
+    img: "../assets/img/CategoryBurger.jpg",
+    bewertung: "4,2 von 5",
+    items: typeof burger !== "undefined" ? burger : [],
+  },
+  {
+    id: 3,
+    selector: "pasta",
+    name: "Pasta",
+    img: "./assets/img/pasta_aglio_e_olio.jpg",
+    bewertung: "4,2 von 5",
+    items: typeof pasta !== "undefined" ? pasta : [],
   },
   {
     id: 4,
@@ -32,6 +29,7 @@ let category = [
     name: "Salat",
     img: "../assets/img/CategorySalad.jpg",
     bewertung: "4,2 von 5",
+    items: typeof salat !== "undefined" ? salat : [],
   },
   {
     id: 5,
@@ -39,6 +37,7 @@ let category = [
     name: "Toppigs",
     img: "./assets/img/tiramisu.jpg",
     bewertung: "4,2 von 5",
+    items: typeof toppigs !== "undefined" ? toppigs : [],
   },
   {
     id: 6,
@@ -46,6 +45,7 @@ let category = [
     name: "Drinks",
     img: "./assets/img/tiramisu.jpg",
     bewertung: "4,2 von 5",
+    items: typeof drinks !== "undefined" ? drinks : [],
   },
 ];
 let baskets = [];

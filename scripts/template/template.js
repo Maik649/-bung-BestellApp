@@ -1,7 +1,18 @@
-function getHeaderMenu(category) {
-  return `<div onclick="renderDishesNavi(${category.selector})" id="header-content" class="headerContent">
-                <li>${category.name}</li>
-                </div>`;
+
+
+function getSections(category) {
+    let dishesHTML = '';
+    if (category.items && category.items.length > 0) {
+      for (let i = 0; i < category.items.length; i++) {
+        dishesHTML += getDefaultDishes(category.items[i]);
+      }
+    }
+  return `<section class="dishes-section">
+               <h2>${category.name}</h2>
+               <div id="dishes-content-${category.id}" class="dishes-content">
+                 ${dishesHTML}
+               </div>
+            </section>`;
 }
 
 function getDefaultDishes(dishe) {
@@ -12,10 +23,6 @@ function getDefaultDishes(dishe) {
        <p>${dishe.price.toFixed(2).replace(".", ",") + " €"}</p>
        <button onclick="addDishesToBasket(${dishe.id})"class="add-to-basket-button">+</button>
     </div>`;
-}
-
-function getRenderBasket() {
-  return ``;
 }
 
 function getRenderBasketItem(basket, index) {

@@ -1,5 +1,5 @@
-const headerContent = document.getElementById("menu-header");
-const mainContent = document.getElementById("dishes-content");
+
+const mainContent = document.getElementById("main-content");
 const dishesFrame = document.getElementById("dishes-content");
 const gesamtPrice = document.getElementById("total-price-value");
 const PriceVSal = document.getElementById("price-value");
@@ -13,34 +13,28 @@ const menuContent = document.getElementById("menu-header");
 const buttonWarenkorb = document.querySelector(".showlink");
 
 function init() {
-  renderHeaderMenu();
-  renderDefaultDishes();
+  renderSections();
   getSupBasketPrice();
 }
 
-function renderHeaderMenu() {
-  for (let menuindex = 0; menuindex < category.length; menuindex++) {
-    const menuDishes = category[menuindex];
-    headerContent.innerHTML += getHeaderMenu(menuDishes);
+function renderSections() {
+   mainContent.innerHTML = "";
+   for (let menuindex = 0; menuindex < category.length; menuindex++) {
+     const menuDishes = category[menuindex];
+     mainContent.innerHTML += getSections(menuDishes);
   }
 }
 
-function renderDishesNavi(array) {
-  dishesFrame.innerHTML = "";
-  if (category) {
-    for (let index = 0; index < array.length; index++) {
-      const deshes = array[index];
-      dishesFrame.innerHTML += getDefaultDishes(deshes);
+// Hilfsfunktion zum Finden eines Dishes aus allen Kategorien
+function findDishById(id) {
+  for (let i = 0; i < category.length; i++) {
+    const categoryItems = category[i].items;
+    if (categoryItems) {
+      const dish = categoryItems.find((d) => d.id === id);
+      if (dish) return dish;
     }
   }
-}
-
-function renderDefaultDishes() {
-  mainContent.innerHTML = "";
-  for (let index = 0; index < dishes.length; index++) {
-    const dishe = dishes[index];
-    mainContent.innerHTML += getDefaultDishes(dishe);
-  }
+  return null;
 }
 
 function renderBasketItem() {
@@ -64,7 +58,7 @@ function disableButton() {
 }
 
 function addDishesToBasket(id) {
-  let dish = dishes.find((dishe) => dishe.id === id);
+  let dish = findDishById(id);
   if (!dish) return;
   let basket = baskets.find((bask) => bask.id === dish.id);
   if (basket) {
